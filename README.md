@@ -1,6 +1,8 @@
 # Mattermost WebRTC
 
-This is a repository to generate a Vagrant machine or a docker image to use the WebRTC functionality in Mattermost
+This is a repository to generate a Vagrant machine or a docker image to use the WebRTC functionality in Mattermost. 
+
+The feature is currently intended as a working prototype for community development and not recommended for production. [See documentation to learn more](https://docs.mattermost.com/deployment/webrtc.html)
 
 
 ## Mattermost WebRTC Vagrant machine
@@ -33,10 +35,10 @@ In Mattermost System Console -> Integrations -> **WebRTC (Beta)** and set the fo
 - Gateway Websocket URL: **wss://dockerhost:8189**
 - Gateway Admin URL: **https://dockerhost:7089/admin**
 - Gateway Admin Secret: **janusoverlord**
-- Leave Blank **STUN URI**, **TURN URI**, **TURN Username** and **TURN Shared Key** unless you configure have [Coturn](https://github.com/coturn/coturn/wiki) configured.
+- Leave Blank **STUN URI**, **TURN URI**, **TURN Username** and **TURN Shared Key** unless you have [Coturn](https://github.com/coturn/coturn/wiki) configured.
 
 Because the WebRTC docker image uses a self-signed certificate you need to enable the ability to make
 requests from Mattermost to external services using insecure connections.
 
-In Mattermost System Console -> Security -> **Connections**
+In Mattermost System Console -> Security -> **Connections**:
 - Enable Insecure Outgoing Connections: true
