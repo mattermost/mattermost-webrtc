@@ -1,0 +1,13 @@
+[Unit]
+Description=Coturn Server
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/usr/bin/turnserver -c /etc/turnserver.conf -v
+Restart=on-abnormal
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
