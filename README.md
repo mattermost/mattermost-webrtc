@@ -4,6 +4,9 @@ This is a repository to generate a Vagrant machine or a docker image to use the 
 
 The feature is currently intended as a working prototype for community development and not recommended for production. [See documentation to learn more](https://docs.mattermost.com/deployment/webrtc.html)
 
+To contribute, please see [Contribution Guidelines](https://docs.mattermost.com/developer/contribution-guide.html).
+
+To file issues, [search for existing bugs and file a GitHub issue if your bug is new](https://www.mattermost.org/filing-issues/). For connection issues, see [existing forum thread to torubleshoot](https://forum.mattermost.org/t/troubleshooting-there-was-a-problem-connecting-the-video-call-errors/2521).
 
 ## Mattermost WebRTC Vagrant machine
 
