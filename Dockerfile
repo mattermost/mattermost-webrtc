@@ -37,7 +37,7 @@ RUN git clone https://github.com/meetecho/janus-gateway.git && \
     openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:1024 -keyout /opt/janus/certs/privateKey.key -out /opt/janus/certs/certificate.crt -subj '/C=US/ST=California/L=Palo Alto/O=Mattermost/OU=WebRTC/CN=dockerhost' && \
     cd ~ && rm -rf janus-gateway
 
-COPY ../vagrant/janus/config/*.cfg /opt/janus/etc/janus/
+COPY vagrant/janus/config/*.cfg /opt/janus/etc/janus/
 
 EXPOSE 7088
 EXPOSE 7089
