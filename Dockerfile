@@ -4,9 +4,9 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get install -y bash wget libm
                                          libogg-dev pkg-config gengetopt libtool automake git cmake
 
 RUN cd ~ && \
-    wget https://github.com/cisco/libsrtp/archive/v1.5.4.tar.gz && \
-    tar xfv v1.5.4.tar.gz && \
-    cd libsrtp-1.5.4 && \
+    wget https://github.com/cisco/libsrtp/archive/v2.0.0.tar.gz && \
+    tar xfv v2.0.0.tar.gz && \
+    cd libsrtp-2.0.0 && \
     ./configure --prefix=/usr --enable-openssl && \
     make shared_library && make install && \
     cd ~ && rm -rf libsrtp-1.5.4
@@ -17,9 +17,9 @@ RUN git clone https://github.com/sctplab/usrsctp && \
     ./configure --prefix=/usr && make && make install && \
     cd ~ && rm -rf usrsctp
 
-RUN git clone git://git.libwebsockets.org/libwebsockets && \
+RUN git clone https://github.com/warmcat/libwebsockets.git && \
     cd libwebsockets && \
-    git checkout v1.5-chrome47-firefox41 && \
+    git checkout v2.1-stable && \
     mkdir build && \
     cd build && \
     cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_C_FLAGS="-fpic" .. && \
