@@ -19,7 +19,7 @@ RUN git clone https://github.com/sctplab/usrsctp && \
 
 RUN git clone https://github.com/warmcat/libwebsockets.git && \
     cd libwebsockets && \
-    git checkout v2.1-stable && \
+    git checkout v1.5-chrome47-firefox41 && \
     mkdir build && \
     cd build && \
     cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_C_FLAGS="-fpic" .. && \
