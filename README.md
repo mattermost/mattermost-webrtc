@@ -1,6 +1,6 @@
 # Mattermost WebRTC
 
-**WebRTC will be removed in Mattermost 5.6 in favor of open source plugins**. For more information, see [this forum post](https://forum.mattermost.org/t/built-in-webrtc-video-and-audio-calls-removed-in-v5-6-in-favor-of-open-source-plugins/5998).
+**WebRTC was removed in Mattermost 5.6 in favor of open source plugins**. For more information, see [this forum post](https://forum.mattermost.org/t/built-in-webrtc-video-and-audio-calls-removed-in-v5-6-in-favor-of-open-source-plugins/5998).
 
 This is a repository to generate a Vagrant machine or a docker image to use the WebRTC functionality in Mattermost. 
 
